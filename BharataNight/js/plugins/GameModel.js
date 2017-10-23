@@ -1,14 +1,14 @@
 /*******************************************
  * 游戏实体类，使用es6
  ******************************************/
-"use script"
+"use strict"
 /*
  * 基础属性类类
  * 被从者和怪物继承
  */
 class Character{
 	constructor() {  
-        this.BasicMaxHP;//基础生命总量
+        this.BasicMaxHP=0;//基础生命总量
         this.BasicMaxMP;//基础法力总量
         this.CurrentHP;//当前血量
         this.CurrentMP;//当前蓝量
@@ -22,7 +22,7 @@ class Character{
         this.Fortune;//幸运
         this.BasicHealthRegen;//基础生命恢复
         this.BasicManaRegen;//基础法力恢复
-        this.CriticalRating;//暴击率
+        this.CriticalRating=0;//暴击率
         this.CriticalMultiplier;//暴击倍率
         this.StatusArray;//状态数组
    		
@@ -30,18 +30,19 @@ class Character{
    //设置属性
    SetValue(parameter,value)
    {
-	   	for(var p in parameter)
+	   	for(var p in this)
 	   	{
 	   		if(p==parameter)
 	   		{
-	   			this[p]=value;
+
+	   		    this[p] = value;
 	   		}
 	   	}
    }
    //获取属性
    GetValue(parameter)
    {
-	   	for(var p in parameter)
+	   	for(var p in this)
 	   	{
 	   		if(p==parameter)
 	   		{

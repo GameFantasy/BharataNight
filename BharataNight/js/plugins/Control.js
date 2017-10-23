@@ -1,7 +1,7 @@
 /*******************************************
  * 封装所有控制，包括以后的虚拟摇杆和虚拟按键
  ******************************************/
-
+"use strict"
 //键盘事件-攻击操作模块
 //onkeydown = function (e) {
 //  if (e.keyCode == Enum.KeyCodeNum.q) {
@@ -26,10 +26,15 @@
 //  }
 //}
 //键盘事件-计时器模块
+var isRegenAvailable = true;
+
 onkeydown = function (e) {
  if (e.keyCode == 81) {
-    status1();
- 
+     //insightBuff();
+     if (isRegenAvailable == true)
+         regenBuff();
+     else
+         console.log("regeneration is cooling down");
  }
  else if (e.keyCode == 87) {
     status2();
