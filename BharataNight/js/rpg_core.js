@@ -2298,7 +2298,7 @@ Input.clear = function() {
     this._latestButton = null;
     this._pressedTime = 0;
     this._dir4 = 0;
-    this._dir8 = 0;
+    //this._dir8 = 0;
     this._preferredAxis = '';
     this._date = 0;
 };
@@ -2417,12 +2417,12 @@ Object.defineProperty(Input, 'dir4', {
  * @property dir8
  * @type Number
  */
-Object.defineProperty(Input, 'dir8', {
+/*Object.defineProperty(Input, 'dir8', {
     get: function() {
         return this._dir8;
     },
     configurable: true
-});
+});*/
 
 /**
  * [read-only] The time of the last input in milliseconds.
@@ -2597,7 +2597,7 @@ Input._updateDirection = function() {
     var x = this._signX();
     var y = this._signY();
 
-    this._dir8 = this._makeNumpadDirection(x, y);
+    //this._dir8 = this._makeNumpadDirection(x, y);
 
     if (x !== 0 && y !== 0) {
         if (this._preferredAxis === 'x') {

@@ -2,8 +2,12 @@
  * 将所有测试输出集中到该脚本
  ******************************************/
 var laoQing = new Servant();
-//laoQing.BasicMaxHP = 50;
+laoQing.BasicMaxHP = 50;
 laoQing.SetValue("BasicMaxHP", 50);
+laoQing.SetValue("Strength",2);
+
+
+
 
 function insightBuff() {
     laoQing.SetValue("CriticalRating", 1);

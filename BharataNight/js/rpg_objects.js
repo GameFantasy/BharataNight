@@ -7620,7 +7620,7 @@ Game_Player.prototype.canMove = function() {
 };
 
 Game_Player.prototype.getInputDirection = function() {
-    return Input.dir8;
+    return Input.dir4;
 };
 
 Game_Player.prototype.executeMove = function(direction) {

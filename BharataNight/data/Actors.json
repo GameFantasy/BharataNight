@@ -1,4 +1,4 @@
 [
 null,
-{"id":1,"battlerName":"saber","characterIndex":0,"characterName":"saber2","classId":1,"equips":[1,1,2,3,0],"faceIndex":0,"faceName":"saber","traits":[],"initialLevel":1,"maxLevel":99,"name":"Bishma","nickname":"Saber","note":"","profile":"Son of King Santanu by the holy river goddess Ganga"}
+{"id":1,"battlerName":"laoqing","characterIndex":0,"characterName":"laoqing","classId":1,"equips":[1,1,2,3,0],"faceIndex":0,"faceName":"laoqing","traits":[],"initialLevel":1,"maxLevel":99,"name":"Qingyao_Yin","nickname":"Laoqing","note":"","profile":"Project Manager of the project \"Night of Bharat\", \na character mainly used for testing"}
 ]

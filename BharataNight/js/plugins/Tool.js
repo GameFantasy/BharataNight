@@ -201,7 +201,12 @@ function rangeDetection(ranges, arrayEnemy) {
         	
        		if(Math.abs(ranges[i].y-arrayEnemy[j]._y)<1 && Math.abs(ranges[i].x-arrayEnemy[j]._x)<1){
        			//对arrayEnemy[j]执行扣血操作，在此处记录被伤害的对象的名称
-       			console.log("打中了"+$dataMap.events[arrayEnemy[j].eventId()].name);
+       		    console.log("打中了" + $dataMap.events[arrayEnemy[j].eventId()].name);
+       		    enemyList[j].CurrentHP -= 10;
+       		    //arrayEnemy[j].moveTypeTowardPlayer();
+       		    console.log($dataMap.events[arrayEnemy[j].eventId()]);
+                if(enemyList[j].CurrentHP<0)
+       		        arrayEnemy[j].erase();
        		}
     	}
     }

@@ -10,8 +10,9 @@ class Character{
 	constructor() {  
         this.BasicMaxHP=0;//基础生命总量
         this.BasicMaxMP;//基础法力总量
-        this.CurrentHP;//当前血量
+        this.CurrentHP=0;//当前血量
         this.CurrentMP;//当前蓝量
+        this.Strength = 0;//current strength
         this.StrikingDistance;//攻击距离
         this.AttackSpeed;//攻击速度
         this.PhysicalDefence;//基础物理防御
